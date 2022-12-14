@@ -5,3 +5,7 @@
  * concatena as strings 'Olá'e 'Mundo', mas desta vez certifique-se de incluir também um espaço
  * (' ') entre as duas palavras.
  */
+console.log('Olá'+'Mundo')
+console.log('Olá'+ ' ' + 'Mundo')
+console.log('Olá '+'Mundo')
+console.log('Olá'+' Mundo')

@@ -1,7 +1,8 @@
+// Trecho do auto da compadecida
 console.log("Padre: Não benzo de jeito nenhum.");
 console.log("Chicó: Mas padre, não vejo nada de mal em se benzer o bicho.");
 console.log("João Grilo: No dia em que chegou o motor novo de Antônio Morais o senhor não benzeu?");
-console.log("Padre: Motor é diferente, é uma coisa que todo mundo benze cachorro é que eu nunca ouvi falar.");
+// console.log("Padre: Motor é diferente, é uma coisa que todo mundo benze cachorro é que eu nunca ouvi falar.");
 console.log("Chicó: Eu acho cachorro uma coisa muito melhor do que motor.");
 console.log("Padre: É, mas quem vai ficar engraçado sou eu, benzendo o cachorro.");
 console.log("João Grilo: É, Chicó, o padre tem razão. Quem vai ficar engraçado é ele e uma coisa é benzer motor de Major Antônio Morais e outra é benzer cachorro de Major Antônio Morais.");
