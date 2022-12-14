@@ -1,0 +1,11 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    width: 700px;
+    margin: 20px auto;
+}
+li{
+    margin: 20px 0px;
+    text-align: justify;
+}
