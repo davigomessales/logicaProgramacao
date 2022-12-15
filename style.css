@@ -5,6 +5,9 @@ body {
     width: 700px;
     margin: 20px auto;
 }
+p{
+    text-align: justify;
+}
 li{
     margin: 20px 0px;
     text-align: justify;
