@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Clima Kelvin</h1>
+    <p>Nas profundezas de seu laboratório de meteorologia na encosta da montanha, o cientista louco Kelvin dominou a
+        previsão do tempo.
+    </p>
+    <p>
+        Recentemente, Kelvin começou a publicar suas previsões do tempo em seu site. No entanto, há um problema: todas
+        as suas previsões descrevem a temperatura em <a
+            href="https://super.abril.com.br/mundo-estranho/o-que-e-zero-absoluto/" target="_blank">Kelvin</a> .
+    </p>
+    <div>
+        <figure>
+
+            <img style="max-width: 100%;"
+                src="https://content.codecademy.com/projects/introduction-to-javascript/learn-javascript-introduction/kelvin-weather/Kelvin%20Thermometers.svg">
+            <caption>Por exemplo, 283 K se converte em 10 °C, que se converte em 50 °F.</caption>
+        </figure>
+    </div>
+    <p>
+        Com nosso conhecimento de JavaScript, vamos converter Kelvin para Celsius e depois para Fahrenheit.
+    </p>
+    <ol>
+        <li>
+            A previsão hoje é 293 Kelvin. Para começar, crie uma variável chamada <strong>kelvin</strong>, e defina-a
+            igual a 293.
+
+            O valor salvo em <strong>kelvin</strong> permanecerá constante. Escolha o tipo de variável com isso em
+            mente.
+        </li>
+        <li>
+            Escreva um comentário acima que explique esta linha de código.
+        </li>
+        <li>
+            Celsius é semelhante a Kelvin - a única diferença é que Celsius é 273 graus menos que Kelvin. Vamos
+            converter Kelvin para Celsius subtraindo 273 da variável <strong>kelvin</strong>. Armazene o resultado em
+            outra variável,
+            chamada <strong>celsius</strong>.
+        </li>
+        <li>
+            Escreva um comentário acima que explique esta linha de código.
+        </li>
+
+        <li>
+            Use esta equação para calcular Fahrenheit e armazene a resposta em uma variável chamada
+            <strong>fahrenheit</strong>.
+            <br>
+            <em>Fahrenheit = Celsius * (9/5) + 32</em>
+            <br>
+            Na próxima etapa, arredondaremos o número salvo para <strong>fahrenheit</strong>. Escolha o tipo de variável
+            que permite
+            alterar seu valor.
+        </li>
+        <li>
+            Escreva um comentário acima que explique esta linha de código.
+        </li>
+        <li>Quando você converte de Celsius para Fahrenheit, geralmente obtém um número decimal. Use o método
+            <strong>.floor()</strong> do objeto <strong>Math</strong> integrado para arredondar para baixo a temperatura
+            em Fahrenheit. Salve o resultado na variável <strong>fahrenheit</strong>.
+        </li>
+
+        <li>Escreva um comentário acima que explique esta linha de código.</li>
+        <li>Use console.log e interpolação de string para registrar a temperatura <strong>kelvin</strong>, <strong>celsius</strong> e <strong>fahrenheit</strong> no console da seguinte
+            forma:
+            <br>
+            <em>A temperatura é TEMPERATURA Kelvin.</em><br>
+            <em>A temperatura é TEMPERATURA graus Celsius</em><br>
+            <em>A temperatura é TEMPERATURA graus Fahrenheit.</em><br>
+            <br>
+            Use interpolação de string para substituir TEMPERATURA pelo valor salvo em <strong>fahrenheit</strong>.
+        </li>
+        <li>
+            Ao usar variáveis, seu programa deve funcionar para qualquer temperatura Kelvin — basta alterar o valor de
+            kelvin e executar o programa novamente.
+            O que é 0 Kelvin em Fahrenheit?
+        </li>
+    </ol>
+    <script src="Tarefa2.js"></script>
+</body>
+
+</html>
