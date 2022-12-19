@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Bola 8 Mágica</h1>
+    <p>Você aprendeu uma ferramenta poderosa em JavaScript: controle de fluxo! Na verdade, é tão poderoso que pode ser
+        usado para prever a sorte de alguém.
+    </p>
+    <p>Neste projeto vamos construir uma <a href="https://en.wikipedia.org/wiki/Magic_8-Ball" target="_blank">Bola Oito
+            Mágica</a> .
+    </p>
+    <div>
+        <figure>
+
+            <img style="max-width: 100%;" src="https://media3.giphy.com/media/RHPF7jp3e5JqDV5vcN/giphy.gif">
+            <br>
+            <caption>A Bola 8 Mágica é uma esfera de plástico, feita para se parecer com uma bola de sinuca de tamanho
+                grande e de número 8, que é usada para adivinhar ou pedir conselhos.</caption>
+        </figure>
+    </div>
+    <p>
+        O usuário poderá inserir uma pergunta, então nosso programa produzirá um resultado de sorte aleatório.
+    </p>
+    <ol>
+        <li>Na primeira linha do programa, defina uma variável chamada <code>userName</code> que seja definida como uma
+            string vazia.
+            Se o usuário quiser, pode inserir seu nome entre as aspas.</li>
+        <li>Abaixo desta variável, crie uma expressão ternária que decida o que fazer se o usuário inserir um nome ou
+            não. Se o usuário inserir um nome - como 'Jane'- use a interpolação de string para fazer logon
+            <code>Hello, Jane!</code> no console. Caso contrário, basta exibir <code>Hello!</code>
+        </li>
+        <li>
+            Crie uma variável chamada <code>userQuestion</code>. O valor da variável deve ser uma string que é a
+            pergunta que o usuário deseja fazer ao Magic Eight Ball.
+        </li>
+        <li>
+            Escreva um <code>console.log()</code> para o <code>userQuestion</code>, informando o que foi perguntado.
+            Você pode incluir o nome do usuário na declaração <code>console.log()</code>, se desejar!
+        </li>
+        <li>
+            Precisamos gerar um número aleatório entre 0 e 7.
+            <br>
+            <br>
+            Crie outra variável chamada <code>randomNumber</code>. Atribua o seu valor com a seguinte expressão que usa
+            dois métodos ( <a target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor">Math.floor</a>()
+            e <a target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Math.random</a>())
+            da biblioteca Math.
+            <br><br>
+            <span class="code-block">
+                Math.floor(Math.random() * 8);
+            </span>
+            <br><br>
+            Saiba mais o que essa expressão faz <button
+                onclick="alert('Math.random() retorna um valor entre 0(inclusivo) e 1(exclusivo). Para fazer com que esse conjunto de números varie de 0 (inclusivo) a 8 (exclusivo), podemos multiplicar o valor retornado por 8. Por fim, para garantir que tenhamos apenas números inteiros de 0a 7, podemos arredondar para baixo usando Math.floor().')">aqui</button>.
+        </li>
+        <li>
+            Crie mais uma variável chamada <code>eightBall</code>, e defina-a como string vazia. Vamos salvar um valor
+            para esta variável nas próximas etapas, dependendo do valor de <code>randomNumber</code>.
+        </li>
+        <li>
+            Precisamos criar um fluxo de controle que receba o <code>randomNumber</code> que criamos na etapa 5 e, em
+            seguida, atribua a <code>eightBall</code> uma resposta que uma Magic Eight Ball retornaria. Pense em
+            utilizar declarações <code>if/ else</code> ou <code>switch</code>. Aqui estão 8 frases da Magic Eight Ball
+            que gostaríamos de salvar na variável <code>eightBall</code>:
+            <ul>
+                <li>It is certain<em> (É uma certeza)</em></li>
+                <li>It is decidedly so<em> (É decididamente assim.)</em></li>
+                <li>Reply hazy try again<em> (Resposta nebulosa, tente de novo)</em></li>
+                <li>Cannot predict now<em> (Não consigo prever agora.)</em></li>
+                <li>Do not count on it<em> (Não conte com isso.)</em></li>
+                <li>My sources say no<em> (Minhas fontes dizem que não.)</em></li>
+                <li>Outlook not so good<em> (Perspectiva não tão boa)</em></li>
+                <li>Signs point to yes<em> (Os sinais apontam que sim)</em></li>
+            </ul>
+            Se <code>randomNumber</code> for 0, atribua uma resposta para a variável <code>eightBall</code>; se
+            <code>randomNumber</code> for 1, atribua a próxima resposta e assim por diante. Se você estiver se sentindo
+            criativo, faça suas próprias respostas!
+        </li>
+        <li>Escreva um <code>console.log()</code> para exibir a resposta da Magic Eight Ball, o valor da variável <code>eightBall</code>.</li>
+        <li>
+            Execute seu programa algumas vezes para ver os resultados aleatórios aparecerem no console!
+            
+            Se você quiser prática extra:
+            <ul>
+                <li>Se você começou com uma <code>switch</code>, converta-a em instruções <code>if/ else if / else</code></li>
+                <li>Se você começou com instruções <code>if/ else if/ else</code>, converta-as em uma instrução <code>switch</code>.</li></li>
+            </ul>
+    </ol>
+    <script src="Tarefa3.js"></script>
+</body>
+
+</html>
