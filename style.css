@@ -7,8 +7,22 @@ body {
 }
 p{
     text-align: justify;
+    font-size: large;
 }
 li{
     margin: 20px 0px;
     text-align: justify;
+    font-size: large;
+}
+code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: rgb(255, 252, 169);
+    border-radius: 3px;
+}
+.code-block {
+    background-color: black;
+    padding: 5px 20px;
+    color: beige;
+    font-family: monospace;
 }
