@@ -6,7 +6,7 @@
  * 
  */
 
-let wordCount = 0;
+let wordCount = 1;
 
 if (wordCount) {
   console.log("Excelente! Você começou a trabalhar!");
@@ -15,7 +15,7 @@ if (wordCount) {
 }
 
 
-let favoritePhrase = 'Olá mundo!';
+let favoritePhrase = '';
 
 if (favoritePhrase) {
   console.log("Esta string não parece vazia.");

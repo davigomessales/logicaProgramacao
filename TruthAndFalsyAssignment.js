@@ -5,9 +5,9 @@
     E se reatribuirmos o valor de ferramenta para 'marcador'. Vamos ver o que acontece com o valor de objetoDeEscrita.
  */
 
-let ferramenta = '';
+let ferramenta = 'marcador';
 
 // use a avaliação de curto-circuito para atribuir valor a variável abaixo:
-let objetoDeEscrita
+let objetoDeEscrita = ferramenta || 'caneta';
 
 console.log(`${objetoDeEscrita} tem mais poder que uma espada.`);

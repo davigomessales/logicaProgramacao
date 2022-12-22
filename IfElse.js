@@ -13,8 +13,8 @@ if (nivelDeFome >= 9) {
 } else {
     console.log('Espera chegar em casa')
 }
-// igualdade == ou ===
+// igualdade ou identidade == ou ===
 // Diferença != ou !==
-console.log('maca' === 'laranja')
-console.log(8 !== 8)
-console.log(8 != 8)
+console.log('maçã' !== 'laranja')
+console.log('laranja' === 'laranja')
+// console.log(8 !== 8)

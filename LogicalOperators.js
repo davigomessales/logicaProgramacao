@@ -5,3 +5,13 @@
  * Depois de executar as instruções acima, experimente usar os operadores || e !.
  * O que acontece se você negar o valor de toda a instrução com ! e alternar para || em vez de &&?
  */
+let mood = 'sleepy';
+let tirednessLevel = 10;
+console.log(!mood)
+console.log(!tirednessLevel)
+
+if (!mood === 'sleepy' || !tirednessLevel > 8) {
+    console.log('time to sleep');
+} else {
+    console.log('not bed time yet');
+}
