@@ -19,6 +19,7 @@ code {
     padding: 2px;
     background-color: rgb(255, 252, 169);
     border-radius: 3px;
+    font-weight: bold;
 }
 .code-block {
     background-color: black;

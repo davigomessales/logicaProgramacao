@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Dia de Corrida</h1>
+    <p>A corrida anual SENAC PE está para começar! Este ano, teremos muitos participantes. Você foi contratado para
+        escrever um programa para fazer as inscrições dos corredores para a corrida e dar instruções a eles no dia da corrida.
+    </p>
+    <p>Por exemplo, como uma linha do tempo, a inscrição deve seguir essa estrutura.</p>
+    <figure>
+        <img style="max-width: 100%;"
+            src="https://content.codecademy.com/projects/introduction-to-javascript/learn-javascript-control-flow/race-day/raceday-timeline.svg">
+        <br>
+    </figure>
+    <p>Veja como funciona nosso cadastro. Existem corredores adultos (maiores de 18 anos) e corredores juvenis (menores
+        de 18 anos). Eles podem se inscrever em um horário mais cedo ou mais tarde. Os corredores recebem um número de corrida e hora de início
+        com base em sua idade e inscrição.</p>
+    <p>Número da corrida:</p>
+    <ul>
+        <li>Os primeiros adultos recebem um número de corrida igual ou superior a 1000.</li>
+        <li>Todos os outros recebem um número abaixo de 1000.</li>
+    </ul>
+    <p>Hora de início:</p>
+    <ul>
+        <li>Os inscritos adultos correm às 9h30 ou 11h.</li>
+        <ul>
+            <li>Os adultos que se inscreveram cedo correm às 9h30.</li>
+            <li>Os adultos que se inscreveram tarde correm às 9h30.</li>
+        </ul>
+        <li>Os inscritos juvenis correm às 12h30 (independentemente da inscrição).</li>
+    </ul>
+    <p>Mas não planejamos corredores com exatamente 18 anos! Nós vamos lidar com isso até o final do projeto.</p>
+    <br>
+    <br>
+    <ol>
+        <li>Os números das corridas são atribuídos aleatoriamente. Fornecemos o código necessário na parte superior do
+            arquivo.
+            <br>
+            <br>
+            Para fazer com que esse conjunto de números varie de <code>0</code>(inclusivo) a
+            <code>1000</code>(exclusivo), podemos multiplicar o
+            valor retornado por 1000.
+            <br>
+            <br>
+            Por fim, para garantir que tenhamos apenas números inteiros de <code>0</code> a <code>999</code>, podemos
+            arredondar para baixo usando
+            <code>Math.floor()</code>.
+        </li>
+        <li>Crie uma variável que indique se um corredor se inscreveu cedo ou não.
+            <br>
+            Atribua um valor booleano a esta variável. Você mudará isso depois ao testar diferentes condições do
+            corredor.
+        </li>
+        <li>
+            Crie uma variável para a idade do corredor e atribua um número a esta variável.
+            <br>
+            Você mudará isso mais tarde ao testar diferentes condições do corredor.
+        </li>
+        <li>Crie uma instrução condicional que verifique se o corredor é adulto <code>E</code> se inscreveu cedo.
+            <br>
+            Some <code>1000</code> e atribua a <code>raceNumber</code> se isso for verdade.
+        </li>
+        <li>Crie uma instrução condicional separada abaixo da primeira (começando <code>if</code> novamente).
+            Esta declaração verificará a idade e a hora de inscrição para determinar o horário da corrida.
+            <br>
+            Para corredores com mais de 18 anos que se inscreveram cedo, exiba uma mensagem no console informando que
+            eles correrão às 9h30 incluindo o seu número de corrida.
+        </li>
+        <li>“Adultos que se inscreveram tarde ​​correm às 11h”
+            <br><br>
+            Como já verificamos os adultos que chegaram cedo, podemos escrever uma mensagem como esta:<em>se não, se o
+                corredor tiver mais de 18 anos E não se inscrever cedo, ele correrá às 11h</em>
+            <br><br>
+            Escreva a declaração <code>else if</code> correspondente.
+
+            Dentro disso, exiba uma string no console informando que eles vão correr às 11 incluindo o seu número de
+            corrida.
+        </li>
+        <li>
+            “Os inscritos jovens correm às 12h30 (independente da inscrição)”
+            <br><br>
+            Para corredores menores de 18 anos, exiba uma mensagem no console informando que
+            eles correrão às 12h30 incluindo o seu número de corrida.
+        </li>
+        <li>
+            Insira diferentes combinações de valores para as duas variáveis ​​que você criou e execute seu código várias
+            vezes. Verifique se as instruções corretas estão sendo impressas no console!
+            <br><br>
+            Se seu código funciona corretamente, todas as configurações abaixo deveriam retornar <code>true</code>
+            <ul>
+                <li>Os corredores maiores de 25 anos de idade e que se inscreveram cedo correrão às 9h30.</li>
+                <li>Os corredores com mais de 25anos E NÃO que se inscreveram cedo correrão às 11h.</li>
+                <li>Os corredores com 16 anos de idade E que se inscreveram cedo correrão às 12h30.</li>
+                <li>Os corredores com 16 anos de idade E NÃO se inscreveram cedo correrão às 12h30.</li>
+            </ul>
+        </li>
+        <li>Não se esqueça dos corredores com exatamente 18 anos!
+            <br>
+            Adicione uma declaração <code>else</code> que exiba uma mensagem no console dizendo para o corredor para ver o balcão de registro.
+        </li>
+    </ol>
+</body>
+
+</html>
