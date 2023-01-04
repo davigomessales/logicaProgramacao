@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Pedra, Papel, Tesoura</h1>
+    <p>Pedra, papel, tesoura é um jogo clássico para dois jogadores.
+        Cada jogador escolhe pedra, papel ou tesoura. Os itens são comparados e o jogador que escolher o item mais
+        poderoso vence.
+    </p>
+    <figure>
+        <img style="max-width: 100%;"
+            src="https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2014/05/shutterstock_148198838.jpg">
+        <br>
+    </figure>
+    <p>Os resultados possíveis são:</p>
+    <ul>
+        <li>Pedra destrói tesouras.</li>
+        <li>Tesoura corta papel.</li>
+        <li>O papel cobre a pedra.</li>
+        <li>Se houver empate, o jogo termina empatado.</li>
+    </ul>
+    <p>Nosso código irá dividir o jogo em quatro partes:</p>
+    <ol>
+        <li>Obtenha a escolha do usuário.</li>
+        <li>Obtenha a escolha do computador.</li>
+        <li>Compare as duas opções e determine um vencedor.</li>
+        <li>Inicie o programa e exiba os resultados.</li>
+    </ol>
+    <br>
+    <p>Lembre-se de comentar as principais partes do código para recordar conceitos e lembrar o que cada parte faz.</p>
+    <br>
+    <ol>
+        <li>O usuário deve poder escolher 'pedra', 'papel' ou 'tesoura' quando o jogo começar.
+            Usando <code>const</code> e a sintaxe de <em>arrow function</em> crie uma função chamada
+            <code>getUserChoice</code> que receba um único parâmetro chamado <code>userInput</code>
+        </li>
+        <li>Agora que um usuário pode passar via parâmetro palavras como 'pedra' e 'Pedra', vamos utilizar a função
+            <code>toLowerCase()</code> do JavaScript para fazer com que o valor em <code>userInput</code> fique em letra
+            minúscula.
+            <br>
+            <br>
+            Você pode usar um código assim:
+            <br>
+            <br>
+            <span class="code-block">userInput = userInput.toLowerCase()</span>.
+        </li>
+        <li>Ao obter a escolha do usuário, você também deve verificar se o usuário digitou uma escolha válida: 'pedra',
+            'papel' ou 'tesoura'.
+            <br>
+            Dentro de <code>getUserChoice()</code>, escreva uma instrução <code>if/ else</code> que certifique-se de que
+            <code>userInput</code> seja 'pedra', 'papel' ou 'tesoura'. Se isso acontecer, então
+            retorne(<code>return</code>) <code>userInput</code>.
+            Caso contrário, use <code>console.log()</code> para imprimir uma mensagem de erro no console.
+        </li>
+        <li>
+            Teste a função chamando-a com entradas válidas e inválidas e imprimindo os resultados no console.
+            Você pode excluí-lo quando souber que sua função funciona.
+        </li>
+        <li>
+            Agora precisamos que o computador faça uma escolha.
+            Crie uma nova função nomeada <code>getComputerChoice</code> em parâmetros. Dentro de seu bloco, utilize
+            <code>Math.random()</code> e <code>Math.floor()</code> para obter um número inteiro entre 0 e 2. Então,
+            dependendo do número, retorne
+            'pedra', 'papel' ou 'tesoura'.
+        </li>
+        <li>
+            Teste a função chamando-a várias vezes e imprimindo os resultados no console.
+            Você pode excluí-lo quando souber que sua função funciona.
+        </li>
+        <li>
+            Agora é hora de determinar um vencedor.
+            Crie uma função chamada <code>determineWinner</code> que receba dois parâmetros chamados
+            <code>userChoice</code> e <code>computerChoice</code>. Esta
+            função irá comparar as duas escolhas jogadas e então retornar (<code>return</code>) se o jogador humano
+            ganhou, perdeu ou empatou.
+            <br>
+            Vamos lidar com a condição de empate primeiro. Dentro da função <code>determineWinner()</code>, escreva uma
+            instrução
+            <code>if</code> que verifique se o parâmetro <code>userChoice</code> é igual ao parâmetro
+            <code>computerChoice</code>. Se assim for, retorne uma string
+            que o jogo foi um empate.
+        </li>
+        <li>
+            Se o jogo não estiver empatado, você precisará determinar um vencedor.
+
+            Comece escrevendo uma instrução <code>if</code> que verifica se o <code>userChoice</code> é 'pedra'. Dentro
+            do bloco <code>if</code> da declaração,
+            escreva outra declaração <code>if/else</code>. O <code>if/else</code> mais interno deve verificar se o
+            <code>computerChoice</code> é 'papel'. Em caso
+            afirmativo, returne uma mensagem de que o computador venceu. Se não, retorne uma mensagem de que o usuário
+            ganhou.
+        </li>
+        <li>
+            Depois, escreva outra instrução <code>if</code> para verificar se <code>userChoice</code> é 'papel'.
+            Dentro da declaração <code>if</code>, a variável <code>computerChoice</code> deve ser 'tesoura' ou 'pedra'.
+            Escreva a lógica que retornará um vencedor.
+        </li>
+        <li>Em seguida, escreva outra instrução <code>if</code> para verificar se <code>userChoice</code> é 'tesoura'.
+            <br>
+            Dentro desta instrução <code>if</code>, <code>computerChoice</code> deve ser 'pedra' ou 'papel'. Escreva a
+            lógica que irá retornar um vencedor.
+        </li>
+        <li>Não esqueça de testar sua função!</li>
+        <li>Tudo está configurado. Agora você precisa iniciar o jogo e registrar os resultados.
+
+            Crie uma função chamada <code>playGame</code>.
+
+            Dentro da função <code>playGame()</code>, crie uma variável chamada <code>userChoice</code> e atribua o seu
+            valor igual ao resultado da chamada <code>getUserChoice()</code>, passando 'pedra', 'papel' ou 'tesoura'
+            como argumento.
+
+            Crie outra variável chamada <code>computerChoice</code> e defina-a igual ao resultado da chamada
+            <code>getComputerChoice()</code>.
+
+            Em ambas as variáveis, use <code>console.log</code> para imprimi-las no console.
+        </li>
+        <li>
+            Finalmente, vamos determinar quem ganhou.
+
+            Dentro da função <code>playGame()</code>, chame a função <code>determineWinner()</code>. Passe as variáveis
+            <code>userChoice</code> ​​e <code>computerChoice</code> como seus parâmetros. Certifique-se de colocar esta
+            chamada de função dentro de uma instrução <code>console.log()</code> para que você possa ver o resultado.
+
+            Então, para iniciar o jogo, chame a função <code>playGame()</code> na última linha do seu programa.
+        </li>
+        <li>
+            Melhore o seu jogo adicionando um código de trapaça secreto. Se um usuário digitar 'bomba' como sua escolha,
+            garanta que o usuário humano seja o vencedor, não importa qual seja a escolha do computador.
+        </li>
+    </ol>
+</body>
+
+</html>
