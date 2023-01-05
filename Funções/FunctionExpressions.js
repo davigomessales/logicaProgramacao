@@ -16,3 +16,19 @@
     7 - Chame o plantaPrecisaDeAgua() e passe 'Terça-feira' como um argumento.
     8 - Para verificar se a função funciona adequadamente, imprima plantaPrecisaDeAgua() no console.
  */
+
+    function lembrarDeRegar() {
+      console.log('Regue a planta')
+    }
+
+    lembrarDeRegar();
+
+    const plantaPrecisaDeAgua = function(dia){
+      if (dia === 'Quarta-feira') {
+         return true;
+      } else {
+         return false;
+      }
+    }
+
+    console.log(plantaPrecisaDeAgua('Quarta-Feira'))

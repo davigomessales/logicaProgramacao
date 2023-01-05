@@ -17,3 +17,12 @@
  * 
  * 4 - Para verificar se a função funciona adequadamente, imprima totalCost no console.
  */
+function monitorCount(rows, columns){
+    return rows * columns;
+}
+function costOfMonitors(rows, columns){
+    return monitorCount(rows, columns) * 200;
+}
+const totalCost = costOfMonitors(5, 4);
+
+console.log(totalCost);

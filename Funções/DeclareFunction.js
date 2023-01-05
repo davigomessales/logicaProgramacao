@@ -11,3 +11,13 @@
  * 4 - No corpo da função greetInSpanish(), imprima a frase no
  * console: 'Buenas tardes.'
  */
+function getReminder () {
+    console.log('Colocar água nas plantas.')
+}
+
+function greetInSpanish() {
+    console.log('Buenas tardes.')
+}
+
+getReminder();
+greetInSpanish();

@@ -5,3 +5,14 @@
  * 3 - A cliente chamada Cristiane acabou de fazer uma compra em uma loja online. Chame a função agradecer()
  * e insira 'Cristiane' como argumento para enviar para Cristiane uma mensagem de agradecimento personalizada.
  */
+function agradecer(nome) {
+    console.log(`Obrigado, ${nome} por sua compra! Nós apreciamos seus negócios.`)
+}
+
+const cliente = 'Matheus'
+const ClienteDesconto = 'Rubens'
+agradecer('Cristiane');
+agradecer('Ísis');
+agradecer('Davi');
+agradecer(cliente); 
+agradecer(ClienteDesconto); 

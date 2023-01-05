@@ -10,9 +10,14 @@ Altere os parâmetros makeShoppingList()para os parâmetros padrão:
     Atribua 'pão' como o valor padrão de item2.
     Atribua 'ovos' como o valor padrão de item3.
  */
-function makeShoppingList(item1, item2, item3){
+function makeShoppingList(item1 = 'leite', item2 = 'pão', item3 = 'ovos'){
     console.log(`Lembrar de comprar ${item1}`);
     console.log(`Lembrar de comprar ${item2}`);
     console.log(`Lembrar de comprar ${item3}`);
   }
   
+
+  // makeShoppingList();
+  // makeShoppingList('Amendoim');
+  makeShoppingList(undefined, true);
+  // makeShoppingList('Inhame', 'Charque', 'Manteiga');

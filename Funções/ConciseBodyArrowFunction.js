@@ -4,6 +4,14 @@
  * para o código caber em uma linha.
  */
 
-const plantaPrecisaDeAgua = (dia) => {
-    dia === 'Quarta-feira' ? true : false;
-  };
+// const plantaPrecisaDeAgua = (dia) => {
+//   if (dia === 'Quarta-feira') {
+//     return true;
+//   } else {
+//     return false;
+//   }
+//   };
+
+const plantaPrecisaDeAgua = dia => dia === 'Quarta-feira' ? true : false;
+
+console.log(plantaPrecisaDeAgua('Quarta-feira'));

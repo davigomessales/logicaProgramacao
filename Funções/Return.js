@@ -16,3 +16,9 @@
     
 4 - Para verificar se a função funciona adequadamente, imprima numOfMonitors no console.
  */
+function monitorCount(rows, columns){
+    return rows * columns;
+}
+const numOfMonitors = monitorCount(3, 5)
+
+console.log(numOfMonitors)

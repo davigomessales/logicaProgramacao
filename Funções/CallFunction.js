@@ -13,3 +13,13 @@
    cada um deles uma mensagem de agradecimento. Atualize seu código para chamar
    agradecer() três vezes.
  */
+
+
+   agradecer();
+   agradecer();
+   agradecer();
+
+
+   function agradecer() {
+    console.log('Obrigado por sua compra! Nós apreciamos seus negócios.')
+   }
