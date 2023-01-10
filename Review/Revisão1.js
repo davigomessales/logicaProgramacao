@@ -19,7 +19,7 @@
         20-64 deve retornar 'adulto'
         65-140 deve retornar 'idoso'
         Se o número for menor que 0 ou maior que 140,
-        o programa deve retornar 'Esta não pe uma idade válida'
+        o programa deve retornar 'Esta não é uma idade válida'
 
     5 - Escreva uma função, notaFinal(). 
     Deve:
